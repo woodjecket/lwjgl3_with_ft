@@ -541,7 +541,7 @@ public class Configuration<T> {
 
     private final String property;
 
-    @Nullable
+    
     private T state;
 
     Configuration(String property, StateInit<? extends T> init) {
@@ -558,7 +558,7 @@ public class Configuration<T> {
      *
      * @param value the value to set
      */
-    public void set(@Nullable T value) {
+    public void set( T value) {
         this.state = value;
     }
 
@@ -567,7 +567,7 @@ public class Configuration<T> {
      *
      * <p>If the option value has not been set, null will be returned.</p>
      */
-    @Nullable
+    
     public T get() {
         return state;
     }
