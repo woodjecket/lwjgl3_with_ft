@@ -4,6 +4,7 @@
  */
 package org.lwjgl.system;
 
+import com.sun.istack.internal.*;
 import org.lwjgl.system.MemoryUtil.*;
 
 import javax.annotation.*;
@@ -350,6 +351,11 @@ public class Configuration<T> {
 
     /** Similar to {@link #OPENGL_EXTENSION_FILTER} for the EGL library (<b>org.lwjgl.egl.extensionFilter</b>). */
     public static final Configuration<Object> EGL_EXTENSION_FILTER = new Configuration<>("org.lwjgl.egl.extensionFilter", StateInit.STRING);
+
+    // -- FREETYPE
+    /** Similar to {@link #LIBRARY_NAME} for the FreeType library (<b>org.lwjgl.freetype.libname</b>). */
+    public static final Configuration<String> FREETYPE_LIBRARY_NAME = new Configuration<>("org.lwjgl.freetype.libname", StateInit.STRING);
+
 
     // -- GLFW
 
